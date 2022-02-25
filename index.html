@@ -1,1 +1,23 @@
-<h1>TEST SITE</h1>
+<script charset="utf-8">
+var clickSubmit = function(){
+  var value = document.getElementById("input-id").value
+  if(value !== "24") {
+    document.getElementById("answer-id").innerHTML = "Wrong Answer!"
+  } else {
+    document.getElementById("answer-id").innerHTML = "Correct Answer!"
+    document.getElementById("next-hint-id").innerHTML = "Next Hint: How much is 3+3?"
+  }
+}
+</script>
+
+
+<h1>Question:</h1>
+Put your answer below:</br></br>
+<input id="input-id"></input>
+
+<button onclick="clickSubmit()">Submit</button></br></br>
+
+
+<div id="answer-id"></div></br>
+<div id="next-hint-id"></div></br>
+
